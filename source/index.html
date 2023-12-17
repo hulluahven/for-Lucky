@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/PoppinsBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PoppinsBold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PoppinsMedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PoppinsRegular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoMedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoMedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoRegular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoRegular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <title>Global</title>
+</head>
+<body class="page__body">
+  <div class="page__body-wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo logo--header" href="#">
+          <div class="logo__container">
+            <div class="logo__mobile">
+              <img src="img/logo-mobile.svg" alt="logo" width="40" height="40">
+            </div>
+            <div class="logo__full">
+              <img src="img/logo-desk.svg" alt="logo" width="132" height="40">
+            </div>
+          </div>
+        </a>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list menu-list">
+              <li class="menu-list__item menu-list__item--active">
+                <a class="menu-list__link" href="#">
+                  Mobile Top Up
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  Rate
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  Help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__login login">
+          <a class="login__enter link-button" href="#">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Global App</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__main">
+            <p class="promo__main-title">
+              now buy your<br> <b>pin <i>or</i> </b><strong>top&nbsp;up<br> </strong> with bank transfer
+            </p>
+            <p class="promo__main-text">
+              We <i>make</i> international calling simple, relible, and cheap<br> basedon your unique calling behavior
+            </p>
+            <div class="promo__start-wrapper">
+              <a class="promo__start-link link-button" href="#">get started</a>
+            </div>
+            <form class="promo__form page-form" action="#" method="POST" target="_blank" autocomplete="off">
+              <label class="page-form__label visually-hidden" for="search-field">Enter location</label>
+              <input class="page-form__input" type="text" id="search-field" name="search" placeholder="Where do you want to call?" autofocus minlength="4" maxlength="12" pattern="!@#$%^&*()">
+              <button class="page-form__submit" type="submit" aria-label="search location"></button>
+            </form>
+            <div class="promo__users users">
+              <div class="users__avatars">
+                <ul class="users__list">
+                  <li class="users__item">
+                    <a class="users__profile" href="#">
+                      <span class="visually-hidden">user name</span>
+                      <div class="users__photo-wrapper">
+                        <img src="img/user1.jpg" alt="User's photo" width="35" height="35">
+                      </div>
+                    </a>
+                    </li>
+                  </li>
+                  <li class="users__item">
+                    <a class="users__profile" href="#">
+                      <span class="visually-hidden">user name</span>
+                      <div class="users__photo-wrapper">
+                        <img src="img/user2.jpg" alt="User's photo" width="35" height="35">
+                      </div>
+                    </a>
+                  </li>
+                  </li>
+                  <li class="users__item">
+                    <a class="users__profile" href="#">
+                      <span class="visually-hidden">user name</span>
+                      <div class="users__photo-wrapper">
+                        <img src="img/user3.jpg" alt="User's photo" width="35" height="35">
+                      </div>
+                    </a>
+                  </li>
+                  </li>
+                  <li class="users__item users__item--loader">
+                    <a class="users__profile" href="#">
+                      <span class="visually-hidden">add profile</span>
+                      <div class="users__photo-wrapper">
+                      </div>
+                    </a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+              <div class="users__info-wrapper">
+                <p class="users__info">45k+ regular user.<a class="users__link" href="#">view price plan</a></p>
+              </div>
+            </div>
+          </div>
+            <div class="promo__visual-wrapper">
+              <div class="promo__image-container">
+                <picture>
+                  <source type="image/webp" srcset="img/girl.png 1x, img/girl@2x.png 2x">
+                  <img src="img/girl.png" width="836" height="557" srcset="img/girl@2x.png 2x" alt="Happy user photo">
+                </picture>
+              </div>
+              <div class="promo__flags-wrapper">
+                <ul class="promo__flags-list flags">
+                  <li class="flags__item flags__item--india">
+                    <img src="img/india.svg" width="30" height="30">
+                  </li>
+                  <li class="flags__item flags__item--britain">
+                    <img src="img/britain.svg" width="60" height="60">
+                  </li>
+                  <li class="flags__item flags__item--italy">
+                    <img src="img/italy.svg" width="40" height="40">
+                  </li>
+                  <li class="flags__item flags__item--india1">
+                    <img src="img/india.svg" width="50" height="50">
+                  </li>
+                  <li class="flags__item flags__item--india2">
+                    <img src="img/india.svg" width="30" height="30">
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer"> This Footer </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

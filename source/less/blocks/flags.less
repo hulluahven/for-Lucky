@@ -1,0 +1,132 @@
+.flags__item {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: @base-orange;
+  border: 10px solid @base-white;
+  z-index: 100;
+  overflow: hidden;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.flags__item--india {
+  width: 30px;
+  height: 30px;
+  // раскомментируйте, если анимация не активна
+  // left: -20px;
+  // bottom: 151px;
+  animation: upIndia 2s linear 1;
+  animation-fill-mode: both;
+}
+
+@keyframes upIndia {
+  0% {
+    left: 200px;
+    bottom: 200px;
+  }
+
+  100% {
+    left: -20px;
+    bottom: 151px;
+  }
+}
+
+.flags__item--britain {
+  width: 60px;
+  height: 60px;
+  // left: -10px;
+  // bottom: 292px;
+  animation: upBritain 2s linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+}
+
+
+@keyframes upBritain {
+  0% {
+    left: 200px;
+    bottom: 200px;
+  }
+
+  100% {
+    left: -10px;
+    bottom: 292px;
+  }
+}
+
+
+.flags__item--italy {
+  width: 40px;
+  height: 40px;
+  // left: 215px;
+  // top: -34px;
+  animation: upItaly 2s linear 1;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
+}
+
+@keyframes upItaly {
+  0% {
+    left: 200px;
+    top: 195px;
+  }
+
+  100% {
+    left: 215px;
+    top: -34px;
+  }
+}
+
+.flags__item--india1 {
+  width: 50px;
+  height: 50px;
+  // right: -11px;
+  // top: 83px;
+  animation: upIndiaOne 2s linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes upIndiaOne {
+  0% {
+    top: 190px;
+    right: 190px;
+  }
+
+  100% {
+    right: -11px;
+    top: 83px;
+  }
+}
+
+.flags__item--india2 {
+  width: 30px;
+  height: 30px;
+  // right: -25px;
+  // bottom: 152px;
+  animation: upIndiaTwo 2s linear 1;
+  animation-fill-mode: both;
+  animation-delay: 1.6s;
+}
+
+@keyframes upIndiaTwo {
+  0% {
+    right: 200px;
+    bottom: 197px;
+  }
+
+  100% {
+    right: -25px;
+    bottom: 152px;
+  }
+}

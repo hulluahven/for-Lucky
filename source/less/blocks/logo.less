@@ -1,0 +1,25 @@
+.logo__mobile {
+  @media (min-width: @mobile-width-min) {
+    display: block;
+  }
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.logo__mobile--active {
+  background-color: @base-white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
+.logo__full {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}

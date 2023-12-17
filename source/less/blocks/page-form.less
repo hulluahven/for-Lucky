@@ -1,0 +1,93 @@
+.page-form {
+  position: relative;
+  display: flex;
+
+  @media (max-width: @mobile-width-only) {
+    padding-right: 0;
+  }
+}
+
+.page-form__input {
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  position: relative;
+  padding: 21px 40px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: @text-shadow;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: @tablet-max) {
+    width: 100%;
+  }
+
+  @media (max-width: @mobile-width-min) {
+    padding: 12px 12px;
+  }
+}
+
+.page-form__submit {
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: @base-green;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  right: 5px;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 28px;
+    right: 28px;
+    background-image: url("../img/lense.svg");
+    transform: translate(50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    &::after {
+      scale: 1.1;
+    }
+  }
+
+  &:focus {
+    &::after {
+      scale: 1.1;
+    }
+  }
+
+  &:active {
+    &::after {
+      scale: 1.1;
+    }
+  }
+
+  @media (max-width: @mobile-width-min) {
+    width: 40px;
+    height: 40px;
+    right: 22px;
+    top: 40px;
+
+    &::after {
+      right: 21px;
+      top: 20px;
+    }
+  }
+
+  @media (min-width: @mobile-width-min) {
+    top: 50px;
+    right: 31px;
+  }
+}

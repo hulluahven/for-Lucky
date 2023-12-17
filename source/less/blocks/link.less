@@ -1,0 +1,30 @@
+.link-button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 23px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: @base-white;
+  background-color: @base-green;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+
+  &:hover {
+    background-color: @base-orange;
+    color: @base-white;
+  }
+
+  &:focus {
+    background-color: @base-orange;
+    color: @base-white;
+  }
+
+  &:active {
+    background-color: @base-green;
+    color: @base-orange;
+  }
+}
